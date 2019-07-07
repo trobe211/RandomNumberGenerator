@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Number Generator</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        html,body{
+            font-family: "Menlo", monospace;
+            font-size: 14px;
+            margin: 0;
+            min-height: 180px;
+            padding: 0;
+            width: 384px;            
+        }
+        
+        h1{
+            font-family: "Menlo", monospace;
+            font-size: 22px;
+            font-weight: 400;
+            margin: 0;
+            color: #2f5876;
+        }
+        a:link, a:visited{
+            color: #000;
+            outline: 0;
+            text-decoration: none;
+        }
+
+        img{
+            width: 30px;
+        }
+
+        .modal-header {
+            align-items: center;
+            border-bottom: 0.5px solid #dadada;
+        }
+
+        .modal-content{
+            padding: 0 22px;
+            margin-top: 5px;
+            font-size: 18px;
+        }
+
+        .logo{
+            padding:16px;
+        }
+
+        .logo-icon{
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+
+        .version{
+            color: #444;
+            font-size: 18px;
+        }
+
+        button {
+            margin-top: 5px;
+            font-family: "Menlo", monospace;
+            font-size: 18px;
+        }
+
+        #number {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        #secondNumber{
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+        #firstNumber{
+            margin-left: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class= "modal-header">
+        <h1 class="logo">
+            <img src="Image/dice-icon-128.png" class = "logo-icon"> Random Number Generator
+            <span class="version">(1.0.0)</span>
+        </h1>
+    </div>
+    <div class = "modal-content">
+            Lower Bound: <input type="number" id = "firstNumber"><br>
+            Upper Bound: <input type="number" id = "secondNumber"><br>
+            <button id = "Button" >Generate Number</button>
+    </div>
+    <p id = "number"> 0 </p>
+    <script src="popup.js"></script>
+</body>
+</html>
